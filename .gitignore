@@ -1,0 +1,35 @@
+# Terraform
+.terraform/
+.terraform.lock.hcl
+
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Variables
+terraform.tfvars
+*.auto.tfvars
+
+# Plans
+*.tfplan
+
+# Sensitive files
+*.pem
+*.key
+
+# AWS
+.aws/
+
+# VS Code
+.vscode/
+
+# Mac/Linux
+.DS_Store
+
+provider-k8s.tf
+istio.tf
+istiod.tf
+ingress.tf
+kube-prometheus-stack.tf
+Kiali.tf
+Jaeger.tf
