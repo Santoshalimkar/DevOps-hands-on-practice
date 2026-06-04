@@ -7,4 +7,8 @@ resource "helm_release" "kiali" {
   chart      = "kiali-server"
 
   namespace  = "istio-system"
+
+  depends_on = [
+    helm_release.istiod
+  ]
 }

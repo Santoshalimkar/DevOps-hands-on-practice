@@ -6,7 +6,6 @@ resource "helm_release" "jaeger" {
 
   chart      = "jaeger"
 
-  namespace  = "observability"
-
+  namespace        = "observability"
   create_namespace = true
 }
